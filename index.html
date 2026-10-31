@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Seraphino Parfums – Искусство быть собой</title>
+
+    <meta
+        name="description"
+        content="Seraphino Parfums – современный парфюмерный магазин. Откройте аромат, который расскажет вашу историю."
+    >
+
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================================
+         NAVIGATION
+    ========================================================== -->
+
+    <header>
+        <div class="container">
+            <nav class="nav">
+
+                <a href="#home" class="logo">
+                    <img
+                        class="logo-mark logo-img"
+                        src="pics/pfp.jpg"
+                        alt="Seraphino Parfums"
+                    >
+                    Seraphino
+                </a>
+
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#about">О компании</a></li>
+                    <li><a href="#brands">Бренды</a></li>
+                    <li><a href="#promotions">Акции</a></li>
+                    <li><a href="#loyalty">Бонусы</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li class="nav-cta">
+                        <a href="#brands" class="nav-button">Каталог</a>
+                    </li>
+                </ul>
+
+                <a href="#brands" class="nav-button">
+                    Каталог
+                </a>
+
+                <button
+                    class="nav-toggle"
+                    type="button"
+                    aria-label="Открыть меню"
+                    aria-expanded="false"
+                    aria-controls="nav-links"
+                >
+                    ☰
+                </button>
+
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
+
+        <section class="hero" id="home">
+
+            <div class="container">
+
+                <div class="hero-content">
+
+                    <div class="eyebrow">
+                        <span></span>
+                        Seraphino Parfums
+                    </div>
+
+                    <h1>
+                        Аромат – это<br>
+                        ваша <em>история.</em>
+                    </h1>
+
+                    <p class="hero-text">
+                        Откройте мир селективной и люксовой парфюмерии.
+                        Найдите композицию, которая станет вашим личным
+                        знаком и останется в памяти.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a href="#brands" class="btn btn-primary">
+                            Открыть коллекцию
+                            <span>→</span>
+                        </a>
+
+                        <a href="#about" class="btn btn-secondary">
+                            Узнать о нас
+                        </a>
+
+                    </div>
+
+                    <div class="hero-note">
+                        <span class="hero-note-line"></span>
+                        Парфюмерия, которая говорит за вас
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             REVIEWS
+        ====================================================== -->
+
+        <section class="section reviews" id="reviews">
+
+            <div class="container">
+
+                <div class="section-label">
+                    Отзывы
+                </div>
+
+                <h2 class="section-title">
+                    Что говорят<br>
+                    наши гости.
+                </h2>
+
+                <p class="section-description">
+                    Поделитесь впечатлениями о магазине и ароматах –
+                    или прочитайте, что пишут другие.
+                </p>
+
+                <div class="reviews-layout">
+
+                    <form class="review-form" id="review-form" novalidate>
+
+                        <h3>Оставить отзыв</h3>
+                        <p>Заполните форму – ваш отзыв появится в списке ниже.</p>
+
+                        <div class="field">
+                            <label for="review-name">Ваш никнейм</label>
+                            <input
+                                type="text"
+                                id="review-name"
+                                name="name"
+                                placeholder="Например, Anna_Parfum"
+                                maxlength="30"
+                                required
+                            >
+                        </div>
+
+                        <div class="field">
+                            <label>Ваша оценка</label>
+                            <div class="star-rating" id="star-rating" role="radiogroup" aria-label="Оценка от 1 до 5">
+                                <button type="button" data-value="1" aria-label="1 звезда">★</button>
+                                <button type="button" data-value="2" aria-label="2 звезды">★</button>
+                                <button type="button" data-value="3" aria-label="3 звезды">★</button>
+                                <button type="button" data-value="4" aria-label="4 звезды">★</button>
+                                <button type="button" data-value="5" aria-label="5 звёзд">★</button>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="review-text">Ваш отзыв</label>
+                            <textarea
+                                id="review-text"
+                                name="text"
+                                placeholder="Расскажите, что вам понравилось…"
+                                maxlength="600"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            Отправить отзыв
+                        </button>
+
+                        <p class="form-status" id="form-status" role="status"></p>
+
+                    </form>
+
+                    <div class="review-list" id="review-list"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             ABOUT
+        ====================================================== -->
+
+        <section class="section about" id="about">
+
+            <div class="container">
+
+                <div class="about-grid">
+
+                    <div class="about-copy">
+
+                        <div class="section-label">
+                            О компании
+                        </div>
+
+                        <h2 class="section-title">
+                            Мы выбираем ароматы,
+                            которые хочется запомнить.
+                        </h2>
+
+                        <p>
+                            Seraphino Parfums появился из любви к искусству
+                            парфюмерии и желания сделать поиск идеального
+                            аромата особенным ритуалом.
+                        </p>
+
+                        <p>
+                            Мы тщательно формируем коллекцию, объединяя
+                            признанные парфюмерные дома и современные
+                            композиции. Для нас аромат – это не просто
+                            аксессуар, а продолжение характера человека.
+                        </p>
+
+                    </div>
+
+                    <div class="about-card">
+
+                        <span class="about-year">
+                            EST. 2018
+                        </span>
+
+                        <h3>
+                            От первого<br>
+                            впечатления –<br>
+                            к воспоминанию.
+                        </h3>
+
+                        <p>
+                            Помогаем находить ароматы, к которым хочется
+                            возвращаться снова.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             BRANDS
+        ====================================================== -->
+
+        <section class="section" id="brands">
+
+            <div class="container">
+
+                <div class="brands-header">
+
+                    <div>
+                        <div class="section-label">
+                            Коллекция
+                        </div>
+
+                        <h2 class="section-title">
+                            Дома, которые<br>
+                            создают впечатления.
+                        </h2>
+                    </div>
+
+                    <p class="section-description">
+                        Познакомьтесь с шестью брендами из нашей коллекции.
+                        От классических композиций до смелых современных
+                        интерпретаций.
+                    </p>
+
+                </div>
+
+
+                <div class="brand-grid">
+
+                    <article class="brand-card brand-card--montale">
+                        <span class="brand-number">01 / HOUSE</span>
+
+                        <div>
+                            <h3 class="brand-name">Montale</h3>
+                            <span class="brand-type">
+                                Верхушка айсберга нишевой парфюмерии
+                            </span>
+                        </div>
+                    </article>
+
+
+                    <article class="brand-card brand-card--liquides">
+                        <span class="brand-number">02 / HOUSE</span>
+
+                        <div>
+                            <h3 class="brand-name">Les Liquides Imaginaires</h3>
+                            <span class="brand-type">
+                                Нишевая парфюмерия
+                            </span>
+                        </div>
+                    </article>
+
+
+                    <article class="brand-card brand-card--sorcinelli">
+                        <span class="brand-number">03 / HOUSE</span>
+
+                        <div>
+                            <h3 class="brand-name">Filippo Sorcinelli</h3>
+                            <span class="brand-type">
+                                Итальянский нишевый бренд
+                            </span>
+                        </div>
+                    </article>
+
+
+                    <article class="brand-card brand-card--toskovat">
+                        <span class="brand-number">04 / HOUSE</span>
+
+                        <div>
+                            <h3 class="brand-name">Toskovat'</h3>
+                            <span class="brand-type">
+                                Авторские композиции
+                            </span>
+                        </div>
+                    </article>
+
+
+                    <article class="brand-card brand-card--adi">
+                        <span class="brand-number">05 / HOUSE</span>
+
+                        <div>
+                            <h3 class="brand-name">Adi Ale Van</h3>
+                            <span class="brand-type">
+                                Private Blend
+                            </span>
+                        </div>
+                    </article>
+
+
+                    <article class="brand-card brand-card--benneviento">
+                        <span class="brand-number">06 / HOUSE</span>
+
+                        <div>
+                            <h3 class="brand-name">Benneviento</h3>
+                            <span class="brand-type">
+                                Кастомная парфюмерия в единичных экземплярах
+                            </span>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PROMOTIONS
+        ====================================================== -->
+
+        <section class="section promotions" id="promotions">
+
+            <div class="container">
+
+                <div class="section-label">
+                    Акции
+                </div>
+
+                <h2 class="section-title">
+                    Поводы выбрать<br>
+                    новый аромат.
+                </h2>
+
+                <div class="promotion-grid">
+
+                    <article class="promo-card featured">
+
+                        <div class="promo-top">
+                            <span class="promo-tag">
+                                Главное предложение
+                            </span>
+
+                            <span class="promo-expiry">
+                                до 31.10
+                            </span>
+                        </div>
+
+                        <div>
+                            <h3>
+                                −20% на второй аромат
+                            </h3>
+
+                            <p>
+                                Выберите два аромата из участвующей
+                                коллекции и получите скидку на второй.
+                            </p>
+
+                            <ul class="promo-terms">
+                                <li>
+                                    Скидка применяется к аромату меньшей
+                                    стоимости из пары.
+                                </li>
+                                <li>
+                                    Не суммируется с другими акциями
+                                    и бонусами Seraphino Club.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="promo-footer">
+                            <span class="promo-code">
+                                Код: <strong>SECOND20</strong>
+                            </span>
+
+                            <a href="#brands" class="promo-cta">
+                                Выбрать ароматы <span>→</span>
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <article class="promo-card">
+
+                        <div class="promo-top">
+                            <span class="promo-tag">
+                                Подарок
+                            </span>
+
+                            <span class="promo-expiry">
+                                до 31.10
+                            </span>
+                        </div>
+
+                        <div>
+                            <h3>
+                                Комплимент к заказу
+                            </h3>
+
+                            <p>
+                                При покупке от 5000 ₽ добавляем набор
+                                миниатюр в подарок.
+                            </p>
+
+                            <ul class="promo-terms">
+                                <li>
+                                    Миниатюры подбираем случайно
+                                    из текущего ассортимента.
+                                </li>
+                                <li>
+                                    Подарок доступен при оформлении
+                                    заказа от 5000 ₽ одним чеком.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="promo-footer">
+                            <span class="promo-code">
+                                От 5000 ₽
+                            </span>
+
+                            <a href="#brands" class="promo-cta">
+                                Перейти к коллекции <span>→</span>
+                            </a>
+                        </div>
+
+                    </article>
+
+
+                    <article class="promo-card">
+
+                        <div class="promo-top">
+                            <span class="promo-tag">
+                                Для новых клиентов
+                            </span>
+
+                            <span class="promo-expiry">
+                                до 31.10
+                            </span>
+                        </div>
+
+                        <div>
+                            <h3>
+                                −10% на первый заказ
+                            </h3>
+
+                            <p>
+                                Зарегистрируйтесь в бонусной программе
+                                и получите скидку на первую покупку.
+                            </p>
+
+                            <ul class="promo-terms">
+                                <li>
+                                    Предложение действует один раз
+                                    для новых участников Seraphino Club.
+                                </li>
+                                <li>
+                                    Скидка не распространяется
+                                    на пробники и подарочные наборы.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="promo-footer">
+                            <span class="promo-code">
+                                Код: <strong>WELCOME10</strong>
+                            </span>
+
+                            <a href="#brands" class="promo-cta">
+                                Получить скидку <span>→</span>
+                            </a>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <p class="demo-note">
+                    <span class="demo-note-mark">i</span>
+                    Демонстрационная страница: акции приведены как пример
+                    и не являются публичной офертой. Реальные сроки
+                    и условия уточняйте у консультантов в магазине
+                    или по телефону.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             LOYALTY
+        ====================================================== -->
+
+        <section class="section" id="loyalty">
+
+            <div class="container">
+
+                <div class="loyalty-grid">
+
+                    <div>
+
+                        <div class="section-label">
+                            Seraphino Club
+                        </div>
+
+                        <h2 class="section-title">
+                            Ароматы любят
+                            постоянство.
+                        </h2>
+
+                        <p class="section-description">
+                            Присоединяйтесь к бонусной программе Seraphino
+                            Club и получайте больше преимуществ с каждой
+                            покупкой.
+                        </p>
+
+                        <div class="loyalty-box" style="margin-top: 35px;">
+
+                            <h3>
+                                10 ₽ = 1 балл
+                            </h3>
+
+                            <p>
+                                Копите баллы за покупки и используйте их
+                                для оплаты до 30% стоимости следующего заказа.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="benefits">
+
+                        <div class="benefit">
+
+                            <div class="benefit-icon">
+                                ✦
+                            </div>
+
+                            <div>
+                                <h4>
+                                    1. Получайте баллы
+                                </h4>
+
+                                <p>
+                                    За каждые потраченные 10 рублей начисляется
+                                    один бонусный балл.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="benefit">
+
+                            <div class="benefit-icon">
+                                ◆
+                            </div>
+
+                            <div>
+                                <h4>
+                                    2. Повышайте уровень
+                                </h4>
+
+                                <p>
+                                    Чем больше покупок, тем выше статус:
+                                    Silver, Gold или Black.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="benefit">
+
+                            <div class="benefit-icon">
+                                ♢
+                            </div>
+
+                            <div>
+                                <h4>
+                                    3. Получайте подарки
+                                </h4>
+
+                                <p>
+                                    Участников ждут персональные предложения,
+                                    пробники и подарки ко дню рождения.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="benefit">
+
+                            <div class="benefit-icon">
+                                ★
+                            </div>
+
+                            <div>
+                                <h4>
+                                    4. Используйте баллы
+                                </h4>
+
+                                <p>
+                                    Списывайте накопленные баллы при
+                                    оформлении последующих заказов.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CONTACTS
+        ====================================================== -->
+
+        <section class="section contacts" id="contacts">
+
+            <div class="container">
+
+                <div class="section-label">
+                    Контакты
+                </div>
+
+                <h2 class="section-title">
+                    Будем рады<br>
+                    познакомиться.
+                </h2>
+
+                <p class="section-description">
+                    Приходите в наш магазин, чтобы попробовать ароматы
+                    лично или получить консультацию парфюмерного эксперта.
+                </p>
+
+
+                <div class="contact-grid">
+
+                    <div class="contact-card">
+
+                        <div class="contact-icon">
+                            ⌖
+                        </div>
+
+                        <h3>
+                            Наш адрес
+                        </h3>
+
+                        <p>
+                            Санкт-Петербург<br>
+                            Лиговский проспект, 30
+                        </p>
+
+                        <a
+                            class="contact-route"
+                            href="https://www.google.com/maps/dir/?api=1&destination=Лиговский+проспект+30,+Санкт-Петербург"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Построить маршрут <span>→</span>
+                        </a>
+
+                    </div>
+
+
+                    <div class="contact-card">
+
+                        <div class="contact-icon">
+                            ◷
+                        </div>
+
+                        <h3>
+                            Часы работы
+                        </h3>
+
+                        <p>
+                            Пн–Пт: 10:00–20:00<br>
+                            Сб–Вс: 11:00–19:00
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-card">
+
+                        <div class="contact-icon">
+                            @
+                        </div>
+
+                        <h3>
+                            Свяжитесь с нами
+                        </h3>
+
+                        <p>
+                            <a href="tel:+79159745058">
+                                +7 915 974 50 58
+                            </a>
+                            <br>
+
+                            <a href="mailto:hello@seraphino-parfums.com">
+                                hello@seraphino-parfums.com
+                            </a>
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps?q=Лиговский+проспект+30,+Санкт-Петербург&output=embed"
+                        title="Карта: Seraphino Parfums, Лиговский проспект, 30"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-inner">
+
+                <div class="footer-brand">
+                    Seraphino Parfums
+                </div>
+
+                <div>
+                    © 2026 Seraphino Parfums. Все права защищены.
+                </div>
+
+                <div>
+                    Искусство быть собой.
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script>
+        (function () {
+            var toggle = document.querySelector('.nav-toggle');
+            var navLinks = document.getElementById('nav-links');
+
+            if (!toggle || !navLinks) {
+                return;
+            }
+
+            function setMenuState(isOpen) {
+                navLinks.classList.toggle('open', isOpen);
+                toggle.classList.toggle('open', isOpen);
+                toggle.textContent = isOpen ? '×' : '☰';
+                toggle.setAttribute('aria-expanded', String(isOpen));
+                toggle.setAttribute(
+                    'aria-label',
+                    isOpen ? 'Закрыть меню' : 'Открыть меню'
+                );
+                document.body.classList.toggle('menu-open', isOpen);
+            }
+
+            function closeMenu() {
+                setMenuState(false);
+            }
+
+            toggle.addEventListener('click', function () {
+                setMenuState(!navLinks.classList.contains('open'));
+            });
+
+            navLinks.addEventListener('click', function (event) {
+                if (event.target.closest('a')) {
+                    closeMenu();
+                }
+            });
+
+            document.addEventListener('keydown', function (event) {
+                if (event.key === 'Escape') {
+                    closeMenu();
+                }
+            });
+
+            document.addEventListener('click', function (event) {
+                if (
+                    navLinks.classList.contains('open') &&
+                    !event.target.closest('.nav')
+                ) {
+                    closeMenu();
+                }
+            });
+        })();
+
+        /* =========================================================
+           REVIEWS
+        ========================================================= */
+
+        (function () {
+            var STORAGE_KEY = 'seraphino-reviews';
+
+            var sampleReviews = [
+                {
+                    name: 'Anna_Parfum',
+                    rating: 5,
+                    date: '12 октября 2026',
+                    text: 'Огромный выбор нишевых ароматов! Консультант помогла подобрать идеальный парфюм под мой характер. Обязательно вернусь ещё.'
+                },
+                {
+                    name: 'DmitryK',
+                    rating: 4,
+                    date: '5 октября 2026',
+                    text: 'Отличный магазин и приятная атмосфера. Минус звезда только за то, что в выходные бывает очередь к консультантам.'
+                },
+                {
+                    name: 'ScentHunter',
+                    rating: 5,
+                    date: '28 сентября 2026',
+                    text: 'Нашёл здесь редкий аромат, который искал больше года. Цены адекватные, есть бонусная программа – очень удобно.'
+                }
+            ];
+
+            function loadReviews() {
+                try {
+                    var stored = localStorage.getItem(STORAGE_KEY);
+                    if (stored) {
+                        var parsed = JSON.parse(stored);
+                        if (Array.isArray(parsed)) {
+                            return parsed;
+                        }
+                    }
+                } catch (e) {
+                    /* ignore */
+                }
+                return sampleReviews.slice();
+            }
+
+            function saveReviews(reviews) {
+                try {
+                    localStorage.setItem(STORAGE_KEY, JSON.stringify(reviews));
+                } catch (e) {
+                    /* ignore */
+                }
+            }
+
+            function formatDate(date) {
+                var months = [
+                    'января', 'февраля', 'марта', 'апреля', 'мая', 'июня',
+                    'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'
+                ];
+                return date.getDate() + ' ' + months[date.getMonth()] + ' ' + date.getFullYear();
+            }
+
+            function starsHtml(rating) {
+                var html = '';
+                for (var i = 1; i <= 5; i++) {
+                    html += i <= rating ? '★' : '☆';
+                }
+                return html;
+            }
+
+            function escapeHtml(str) {
+                return String(str)
+                    .replace(/&/g, '\x26amp;')
+                    .replace(/</g, '\x26lt;')
+                    .replace(/>/g, '\x26gt;')
+                    .replace(/"/g, '\x26quot;')
+                    .replace(/'/g, '\x26#39;');
+            }
+
+            function renderReviews(reviews) {
+                var list = document.getElementById('review-list');
+                if (!list) {
+                    return;
+                }
+
+                if (!reviews.length) {
+                    list.innerHTML = '<p class="review-empty">Пока нет отзывов. Станьте первым!</p>';
+                    return;
+                }
+
+                list.innerHTML = reviews.map(function (review) {
+                    var initial = (review.name || '?').charAt(0).toUpperCase();
+                    return (
+                        '<article class="review-card">' +
+                            '<div class="review-card-top">' +
+                                '<div class="review-author">' +
+                                    '<span class="review-avatar">' + initial + '</span>' +
+                                    '<div>' +
+                                        '<strong>' + escapeHtml(review.name) + '</strong>' +
+                                        '<span class="review-date">' + escapeHtml(review.date) + '</span>' +
+                                    '</div>' +
+                                '</div>' +
+                                '<span class="review-stars" aria-label="Оценка ' + review.rating + ' из 5">' +
+                                    starsHtml(review.rating) +
+                                '</span>' +
+                            '</div>' +
+                            '<p>' + escapeHtml(review.text) + '</p>' +
+                        '</article>'
+                    );
+                }).join('');
+            }
+
+            var reviews = loadReviews();
+            renderReviews(reviews);
+
+            var form = document.getElementById('review-form');
+            var ratingButtons = document.querySelectorAll('#star-rating button');
+            var statusEl = document.getElementById('form-status');
+            var selectedRating = 0;
+
+            ratingButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    selectedRating = parseInt(button.getAttribute('data-value'), 10);
+                    ratingButtons.forEach(function (btn) {
+                        var value = parseInt(btn.getAttribute('data-value'), 10);
+                        btn.classList.toggle('active', value <= selectedRating);
+                    });
+                });
+            });
+
+            function showStatus(message, isError) {
+                if (!statusEl) {
+                    return;
+                }
+                statusEl.textContent = message;
+                statusEl.style.color = isError ? '#ff8f8f' : 'var(--accent-light)';
+                statusEl.classList.add('show');
+                setTimeout(function () {
+                    statusEl.classList.remove('show');
+                }, 4000);
+            }
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                var nameInput = document.getElementById('review-name');
+                var textInput = document.getElementById('review-text');
+                var name = nameInput.value.trim();
+                var text = textInput.value.trim();
+
+                if (!name) {
+                    showStatus('Пожалуйста, укажите никнейм.', true);
+                    nameInput.focus();
+                    return;
+                }
+
+                if (!selectedRating) {
+                    showStatus('Пожалуйста, выберите оценку от 1 до 5 звёзд.', true);
+                    return;
+                }
+
+                if (!text) {
+                    showStatus('Пожалуйста, напишите текст отзыва.', true);
+                    textInput.focus();
+                    return;
+                }
+
+                var review = {
+                    name: name,
+                    rating: selectedRating,
+                    date: formatDate(new Date()),
+                    text: text
+                };
+
+                reviews.unshift(review);
+                saveReviews(reviews);
+                renderReviews(reviews);
+
+                form.reset();
+                selectedRating = 0;
+                ratingButtons.forEach(function (btn) {
+                    btn.classList.remove('active');
+                });
+
+                showStatus('Спасибо! Ваш отзыв опубликован.', false);
+            });
+        })();
+    </script>
+
+</body>
+</html>
